@@ -1,0 +1,21 @@
+import Link from "next/link";
+import {MainLayout} from "../components/layouts/MainLayout";
+import styles from "../components/layouts/MainLayout.module.css";
+
+export default function ContactPage() {
+    return (
+        <MainLayout>
+            <h1>Pagina de Contact</h1>
+
+            <h1 className={'title'}>
+                {/*Ir a <a href="/about">About</a>*/}
+                Ir a<Link href="/contact">Contact</Link>
+            </h1>
+
+
+            <p className={styles.description}>
+                Get started by editing{' '}
+                <code className={styles.code}>pages/index.js</code>
+            </p>
+        </MainLayout>    )
+}
